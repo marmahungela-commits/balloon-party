@@ -296,7 +296,7 @@ const GreetingCard = () => {
             Happy Birthday!
           </h3>
           <p className="text-gray-700 font-semibold leading-snug text-[15px]">
-            I hope you enjoyed your day 🥳
+            I hope your birthday was absolutely amazing and filled with joy! ✨
           </p>
         </div>
       </motion.div>
@@ -399,7 +399,7 @@ export default function App() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="relative min-h-[100dvh] bg-[#38bdf8] flex flex-col items-center justify-center gap-14 overflow-hidden font-sans pb-8 w-full max-w-full">
+    <div className="relative min-h-screen bg-[#38bdf8] flex flex-col items-center justify-center gap-14 overflow-hidden font-sans pb-8 w-full max-w-full">
       <AnimatePresence>
         {isClicked && (
           <motion.div
@@ -525,6 +525,10 @@ export default function App() {
           </motion.button>
         )}
       </AnimatePresence>
+
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-white/80 text-[11px] font-medium tracking-wide z-40 pointer-events-none">
+        Made by Ma'R
+      </div>
     </div>
   );
 }
